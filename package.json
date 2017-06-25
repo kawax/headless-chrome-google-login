@@ -1,0 +1,13 @@
+{
+  "name": "headless-chrome-google-login",
+  "version": "1.0.0",
+  "main": "google_login.js",
+  "author": {
+    "name": "kawax",
+    "email": "kawaxbiz@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chromy": "^0.2.6"
+  }
+}
