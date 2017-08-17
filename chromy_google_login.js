@@ -1,9 +1,7 @@
-const Chromy = require('chromy')
-const fs = require('fs')
+const Chromy = require('chromy');
+const fs = require('fs');
 
-//Googleアカウントのログイン情報。2段階認証などを使ってる場合はオフにしないとログインできない。
-const mail = ''
-const password = ''
+const config = require('./config');
 
 async function main() {
     //trueにすると途中段階のスクリーンショットを残す。
@@ -23,7 +21,7 @@ async function main() {
 
 
     //メール
-    await chromy.type('#identifierId', mail)
+    await chromy.type('#identifierId', config.mail)
 
     if (screenshot) {
         fs.writeFileSync('mail.png', await chromy.screenshot())
@@ -38,7 +36,7 @@ async function main() {
     }
 
     //パスワード
-    await chromy.type('input[name=password]', password)
+    await chromy.type('input[name=password]', config.password)
     await chromy.click('span.' + next_class)
 
     await chromy.sleep(5000)

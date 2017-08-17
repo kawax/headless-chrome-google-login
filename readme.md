@@ -5,11 +5,14 @@
 npm install
 ```
 
-google_login.js内のGoogleアカウントを設定。
+## 設定
+config.sample.jsをコピーしてconfig.jsを作る。
+config.js内のGoogleアカウントを設定。
 
 
+## Chromy版
 ```
-node google_login.js
+node chromy_google_login.js
 ```
 
 `https://myaccount.google.com/` が出力されればログイン成功している。
