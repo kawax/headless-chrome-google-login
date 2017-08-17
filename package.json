@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chromy": "^0.2.6"
+    "chromy": "^0.2.6",
+    "puppeteer": "^0.9.0"
   }
 }
