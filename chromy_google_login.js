@@ -61,4 +61,3 @@ const next_class = 'snByac';
 
     await chromy.close()
 })();
-

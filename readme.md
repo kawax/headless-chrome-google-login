@@ -15,6 +15,8 @@ config.js内のGoogleアカウントを設定。
 node chromy_google_login.js
 ```
 
+終了。
+
 ## Puppeteer版
 ```
 node puppeteer_google_login.js
@@ -24,9 +26,11 @@ node puppeteer_google_login.js
 
 2017年8月時点のログイン画面でのみ確認してるので今後変更される可能性は高い。
 
+2018年12月時点で動作確認。2段階認証でなければログインできる。
+
 ## 動作確認環境
-- node.js 8.2.1
-- Chrome 60
+- node.js 11.4
+- Chrome 71
 
 ## 使ったもの
 - https://github.com/OnetapInc/chromy
